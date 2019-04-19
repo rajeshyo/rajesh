@@ -1,0 +1,309 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"><link href="Receipt%20Print_files/calender.css" type="text/css" rel="stylesheet"><link href="Receipt%20Print_files/demo.css" type="text/css" rel="stylesheet"><link href="Receipt%20Print_files/epay-styles.css" type="text/css" rel="stylesheet"><link href="Receipt%20Print_files/Layout.css" type="text/css" rel="stylesheet"><link href="Receipt%20Print_files/menu.css" type="text/css" rel="stylesheet"><link href="Receipt%20Print_files/Messages.css" type="text/css" rel="stylesheet"><link href="Receipt%20Print_files/ValidationSummary.css" type="text/css" rel="stylesheet"><title>
+	Receipt Print
+</title>
+    <style type="text/css">
+        * {
+            font-family: Arial;
+            font-size: 9pt;
+            background: #FDFDFD;
+        }
+
+        table {
+            border-collapse: collapse;
+        }
+
+        .bordert {
+            border-top: #000000 1px solid;
+        }
+
+        .borderr {
+            border-right: #000000 1px solid;
+        }
+
+        .borderl {
+            border-left: #000000 1px solid;
+        }
+
+        .inbordert {
+            border-top: #FFFFFF 1px solid;
+        }
+
+        .nobordert {
+            border-top: none;
+        }
+
+        .noborderr {
+            border-right: none;
+        }
+
+        .noborderb {
+            border-bottom: none;
+        }
+
+        .noborderl {
+            border-left: none;
+        }
+
+        .padding {
+            padding: 3px;
+        }
+    </style>
+    <script language="javascript" type="text/javascript">
+        /*document.oncontextmenu = RightMouseDown;
+        function RightMouseDown() { return false; }*/
+    </script>
+</head>
+<body style="margin: 0px;" oncontextmenu1="return false;">
+    <form name="form1" method="post" action="./EHallBookReceiptPrint.aspx" id="form1">
+<div>
+<input name="__VIEWSTATE" id="__VIEWSTATE" value="qeKJebJcCZkbVM6443LUHls35MmfY+po2i45m/Q6S5V+dy9i/qsyzD1vDJGYOa5J+SnJjKVAjhE678U+FThkllzOP/nZZJYKyvhadHtFLIE+J/qVHBVyx09KqEqbChJZFyk64v16K9s/8r3mNEIeGl6nBjptfPxLUActJ54wu+R2rVkSCOjMuDP3xBGSWcwdKb82YYax6Y4qqWvZiyIDZe7rBqd6iRwDaa7E7EYqZ1y/t8ZJ8ruWu9tZ3eZt6er/CYoojn5zJ2wnEneJnSsuy4uVl99I5UVQu1oJN0WUJT2ka3XJ/nqNgQNI7i4fIKkNrMuyNxaQn8pF0opV+ZGBdw9M7TDST9c2Uet6UyZDHuj+VLjVgkVh3qz26sH7+DbenzyPdsQJ67sm+9VZTvQ4PdyTQ+Dj5ptUdkBROrvIvQid2b8/WmqdQn828NB4KSSpmrezX3GUjRq4LkZJvqnqc92TTCWrZ063GzZWa3NueHpJyHmKSEqczIULnLyPoBeym/cpeHJrFC0kQy7QXcCX8a4+yq2G1lcYdNAdIsSciwWtQqSncLpcrCeH0okhVv8hTio3Dh2HL5Pexe2WetlxVHqHMj9JwdNYGY/vc59dAalMp2eVjHLq6butC2le1FvgaYXsvISPlh0be3f8e07UNvgi0tudfQdUVsI5IUXbOWYadYJQn4iqH1DSeE1OSp26j62UaPfWWy95CWxgMTw9zZzJYCCeD07N60oDEw0ZfrjFK7Wwgq9jBsIwj6Pcn54vfcFqJ86bB3AHmnzcx3KotEVwtmGh8XWTB0MMPAH/cZZGIWSvvSeeeA0UzJQ0SqbgNQEADq8nL3M3eNpU9docrDcEa+d2P510JInfSBOZiXCoiJIefx76CzzWPRSaQIwSZkwC5dpChTjvi+lf/LnLChEktDo5c3hbTeVt81HWMLaEdGozvg1W0lb9xELrwiUoMGGCQSJ5hqMo+tRJQ6fJY+kzv971ze18JeCLPsMTn1eGGx2/ujVMgWSaOpV9H61iC36lABPP73oEFdKvVveTvCiif9vnIuk5+hM6POApFtTIKBftHbw3PBbvrBvCH3ZXzX4R/N/ks8SvPrLoLydiNnMImg6qD5fsLwm/oDZMxozEu6Gbt+/hEjJziosDfNMbuOfVOOcwi/TT8pySCdUGoiO0aHCDrWaY108EbBK6UChR6rRJOfQmJTqkuvnIADZ73ijJnI4jtt0uUZSvEpukGqRJ4sYTvKiGChswvGqQyA4+TPtCEiRpJShm5rEGQINPq0XenYnMktwmdYg/eW8ERVtKFt2tPBKCdgx+8Xc0VYbmUG+aaAYcTe8cdT0il0Uu9H5q4mTs5Dwk/FYhf0SpsAes/nluZxAxoK6XhxhbYR1AsFkGs87unCeZBXWHQ4VZ7IX9XRvC1cX6hcnb1VIWqG6oG586gI7YzPdDT35BkuWZo0y5qCU1NoiFY6qZSf+aZj1RhnxaauXNEqHx3zxatKRdxvtcxwUsB+MZzjINzF0pPLpUzWKMl3IFGQ/FvOHbL/Egv/ZWIN0Pi5eLyhaViwCsaMSQ4nJP/XKre+lME0ctFXpnFozkH4ZHs2SK5spO+YYOlteFxG8mdwBb+7KvosdZNK9eeNQOEFL9TJUW1EUMUnBdNn0WhfpxYBIOCiQcSo4dzYiXhGZ2hSOZrq5M8Sc5AEXzkv6xm099Pp+zkbreRcJZ7wKljsYJsFOfwClgOzIRzWe6IPrOlWFlI70r/ig5Ia/XamgF58gUngql0cE=" type="hidden">
+</div>
+
+<div>
+
+	<input name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="39173ED7" type="hidden">
+	<input name="__VIEWSTATEENCRYPTED" id="__VIEWSTATEENCRYPTED" value="" type="hidden">
+</div>
+        <span id="lblErrMsg" style="color:#CC0000;"></span>
+        <div id="pnlReceiptBack" style="position: absolute; left: 10px; top: 100px; z-index: 99; width: 710px; height: 400px; text-align: center;">
+	
+            <img src="Receipt%20Print_files/smc-logo-back.jpg" style="border-width:0px;width: 300px; height: 352px;" align="middle">
+        
+</div>
+        <div id="pnlReceipt" style="width: 710px; position: absolute; left: 10px; top: 10px; z-index: 100;">
+	
+            <div style="clear: both;">
+                <img id="IMgPrintHead" src="Receipt%20Print_files/print-header-CHallBook.jpg" style="width:710px;border-width:0px;">
+            </div>
+            <div style="clear: both; width: 99%; margin: 0px auto;">
+                <div style="clear: both; border: #0055A6 2px solid; margin-left: 0px;">
+                    <table width="100%" cellspacing="0" cellpadding="3" border="0" align="center">
+                        <tbody><tr>
+                            <td colspan="3">
+                                <table width="100%" cellspacing="0" cellpadding="0" border="0">
+                                    <tbody><tr>
+                                        <td width="10%" align="left">
+                                            <b>
+                                                <span id="lblLDateTime">Date &amp; Time : </span>
+                                            </b>
+                                        </td>
+                                        <td width="20%" align="left">
+                                            <b>
+                                                <span id="lblDateTime">12/10/2017 10:31:46 PM</span>&nbsp;
+                                            </b>
+                                        </td>
+                                        <td width="30%" align="left">
+                                            <b>
+                                                
+                                                <span id="lblLHallName">Hall/Party Plot Name : Nana Varachha Community Hall</span>
+                                                &nbsp;&nbsp;</b>
+                                        </td>
+                                        
+                                        <td width="20%" align="right">
+                                            <b>
+                                                <span id="lblLScrollNo">ScrollNo : 990/30</span>
+                                                &nbsp;&nbsp;</b>
+                                        </td>
+                                        
+                                    </tr>
+                                </tbody></table>
+                            </td>
+                        </tr>
+                        <tr>
+                            
+                            
+                        </tr>
+                        <tr>
+                            <td class="bordert" colspan="3" align="left">
+                                <b>
+                                    <span id="lblProgramName">Program Type : Marriage/Reception</span>
+                                </b>
+                            </td>                            
+                        </tr>
+                        <tr>
+                            <td class="bordert borderr" rowspan="2" valign="top" width="18%" align="left">
+                                <b>
+                                    <span id="lblLName">Name &amp; Address</span><br>
+                                </b>
+                                <br>
+                            </td>
+                            <td class="bordert" colspan="2" style="padding-top: 6px" valign="middle" width="85%" align="left">
+                                <span id="lblName">purvesh a ramoliya</span>&nbsp;
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="bordert" colspan="2" style="padding-top: 5px" valign="middle" align="left">
+                                <span id="lblAddress">39,santinagar,punagam,surat-395010</span>
+                                
+                                <br>
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td colspan="3" class="bordert" style="padding: 0px;">
+                                <table width="100%" cellspacing="0" cellpadding="0" border="0">
+                                    
+                                    <tbody><tr>
+                                        <td valign="top" width="75%">
+                                            <div>
+		<table rules="all" id="gvParticular" style="border-color:Black;border-width:1px;border-style:None;width:100%;border-collapse:collapse;border:none;" cellspacing="0" cellpadding="3" border="1">
+			<tbody><tr>
+				<th scope="col">SrNo</th><th scope="col">BookDate</th><th scope="col">Floor/Plot - 0</th><th scope="col">TotalAmount</th>
+			</tr><tr align="center">
+				<td>1</td><td>10/12/2017</td><td>Hall with Ground</td><td>12000.00</td>
+			</tr>
+		</tbody></table>
+	</div>
+                                            <div id="divExtraVSep2" class="bordert" style="font-size: 2px;">
+                                                &nbsp;
+                                            </div>
+                                        </td>
+                                        <td class="borderl" valign="top" width="25%">
+                                            <table width="100%" cellspacing="0" cellpadding="3" border="0">
+                                                <tbody><tr>
+                                                    <td align="center">
+                                                        <b>Financial Year</b>
+                                                        <br>
+                                                        <span id="lblFinYear">2017-18</span>&nbsp;
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="bordert" align="center">
+                                                        <b>Transaction ID</b>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="inbordert" align="center">
+                                                        <span id="lblPaymentId">SMCeCHB2717J120023</span>&nbsp;
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="bordert" align="center">
+                                                        <b>Payment Mode</b>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="inbordert" align="center">
+                                                        <span id="lblPaymentMode">ePayment</span>&nbsp;
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="bordert" align="center">
+                                                        <b>Reference No.</b>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="inbordert" align="center">
+                                                        <span id="lblTXNRefNo">JDBS5731048344</span>&nbsp;
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="bordert" align="center">
+                                                        <b>Center</b>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="inbordert" align="center">
+                                                        <span id="lblCenter">EPayService</span>&nbsp;
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="inbordert" align="center">
+                                                        <span id="lblCenter2">www.suratmunicipal.gov.in</span>&nbsp;
+                                                    </td>
+                                                </tr>
+                                            </tbody></table>
+                                            
+                                        </td>
+                                    </tr>
+                                </tbody></table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="bordert borderr" style="width: 16%" align="right">
+                                <b>Total Amount</b></td>
+                            <td class="bordert" style="width: 46%">
+                                <b>Amount In Words</b></td>
+                            <td class="bordert borderl borderb" style="width: 27%" align="center">
+                                <span id="lblStationaryNoPayer">PM8X258M5HAI</span>&nbsp;</td>
+
+                        </tr>
+                        <tr>
+                            
+                            <td class="bordert borderr" align="right">
+                                <span id="lblTotalAmount">12000.00</span>&nbsp;
+                            </td>
+                            <td class="bordert">
+                                <span id="lblAmountInWord">Twelve Thousand Only</span>&nbsp;
+                            </td>
+                            
+                        </tr>
+                       
+                    </tbody></table>
+                </div>
+                <br>
+                <table id="tblHeadWiseSummary" class="t3" width="100%">
+		<tbody><tr>
+			<td>
+                            <div>
+				<table rules="all" id="gvHeadWiseSummary" style="border-color:Black;border-width:0px;border-style:None;width:100%;border-collapse:collapse;" cellspacing="0" cellpadding="3" border="0">
+					<tbody><tr>
+						<th scope="col" align="center">Sr. No.</th><th scope="col" align="center">Head Name</th><th scope="col" align="center">Amount</th>
+					</tr><tr align="center">
+						<td align="center">1</td><td align="left">Deposit</td><td align="right">12000.00</td>
+					</tr><tr align="center">
+						<td align="center">&nbsp;</td><td align="left">Total Amount</td><td align="right">12000.00</td>
+					</tr>
+				</tbody></table>
+			</div>
+                        </td>
+		</tr>
+	</tbody></table>
+	
+                <div style="line-height: 14px; padding-left: 3px; letter-spacing: 1px;">
+                    <fieldset>
+                        <legend><b>Important Notes:</b></legend>
+                    
+                    
+                        (1) Time includes the entry and exit time.It is 
+required to vacate the community hall and party plot completely on or 
+before end time,beyond which overtime will be charged(timings for use 
+propeties between 5.00 AM to 12.00 AM).
+                    <br>
+                    (2) All parties/organizers have to observe the SMC RULES.
+                    <br>
+                      
+                    </fieldset>
+                    </div>
+                    
+                    
+                    
+                    
+                <div style="font-size: 8px; line-height: 14px; padding-left: 3px; letter-spacing: 1px;">
+                    Note :- Receipt is subject to realization of amount of instrument.
+                </div>
+            </div>
+        
+</div>
+    </form>
+    
+    <script language="javascript" type="text/javascript">
+        function printMe() {
+            try {
+                var conform = window.confirm("Do you want to print receipt ?");
+                if (conform == 1) {
+                    window.print();
+                }
+            } catch (ex) {
+                //window.alert(ex);
+            }
+        }
+
+        window.setTimeout("printMe()", 1000);
+    </script>
+    
+
+
+</body></html>

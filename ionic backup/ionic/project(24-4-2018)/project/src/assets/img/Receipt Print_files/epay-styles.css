@@ -1,0 +1,471 @@
+
+#ePay-Home {
+		
+		text-align: center;
+		
+        width: 696px;  /*total computed width */
+		zoom: 1;
+	}
+#ePay-Home2 {
+		
+		text-align: center;
+		
+        width: 920px;  /*total computed width */
+		zoom: 1;
+	}
+	#ePay-Home:before, #ePay-Home:after {
+	  content: "";
+	  display: table
+	}
+
+	#ePay-Home:after {
+	  clear: both
+	}
+
+	/* --------------- */	
+
+	#ePay-Home .plan {
+		     
+		/*background: #666666;*/ 
+        		background: #ededed;      
+	
+		font: 11px verdana, Arial, Helvetica;
+             
+	/*	border: 1px solid #ddd;*/
+		/*font: 11px verdana, Arial, Helvetica;*/
+		color:#000000;
+		text-decoration:none;
+		padding: 12px;
+		width: 134px;
+		float: left;
+		_display: inline; /* IE6 double margin fix */
+		position: relative;
+		/*-moz-box-shadow: 0 2px 2px -1px rgba(0,0,0,.3);
+		-webkit-box-shadow: 0 2px 2px -1px rgba(0,0,0,.3);
+		box-shadow: 0 2px 2px -1px rgba(0,0,0,.3);*/		
+         -webkit-box-shadow: 0 5px 5px rgba(0, 0, 0, .3);   
+	  -moz-box-shadow: 0 12px 15px rgba(0, 0, 0, .3);
+	  box-shadow: 0 5px 5px rgba(0, 0, 0, .3);
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 0;
+    top: 0px;
+    left: 0px;
+}
+    #ePay-Home2 .plan {
+		     
+		/*background: #666666;*/ 
+        		background: #ededed;      
+	
+		font: 11px verdana, Arial, Helvetica;
+             
+	/*	border: 1px solid #ddd;*/
+		/*font: 11px verdana, Arial, Helvetica;*/
+		color:#000000;
+		text-decoration:none;
+		padding: 12px;
+		width: 154px;
+		float: left;
+		_display: inline; /* IE6 double margin fix */
+		position: relative;
+		/*-moz-box-shadow: 0 2px 2px -1px rgba(0,0,0,.3);
+		-webkit-box-shadow: 0 2px 2px -1px rgba(0,0,0,.3);
+		box-shadow: 0 2px 2px -1px rgba(0,0,0,.3);*/		
+         -webkit-box-shadow: 0 5px 5px rgba(0, 0, 0, .3);   
+	  -moz-box-shadow: 0 12px 15px rgba(0, 0, 0, .3);
+	  box-shadow: 0 5px 5px rgba(0, 0, 0, .3);
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 0;
+    top: 0px;
+    left: 0px;
+}
+#ePay-Home .plan::after {
+	  z-index: -1; 
+      margin-top:-25px;
+	  position: absolute; 
+	  content: "";
+	  bottom: 10px;
+	  right: 4px;
+	  width: 80%; 
+	  top: 80%; 
+	  -webkit-box-shadow: 0 12px 5px rgba(0, 0, 0, .3);   
+	  -moz-box-shadow: 0 12px 15px rgba(0, 0, 0, .3);
+	  box-shadow: 0 12px 5px rgba(0, 0, 0, .3);
+	  -webkit-transform: rotate(3deg);    
+	  -moz-transform: rotate(3deg);   
+	  -o-transform: rotate(3deg);
+	  -ms-transform: rotate(3deg);
+	  transform: rotate(3deg);	
+	}	
+	
+	#ePay-Home .popular-plan {
+		top: -20px;
+		padding: 40px 20px;   
+	}
+	
+	/* --------------- */	
+
+	#ePay-Home .header {
+		position: relative;
+		color:#ffffff;
+		font-weight: normal;
+		text-transform: uppercase;
+        vertical-align:middle;
+        width:140px;
+		padding: 10px;
+		height: 40px; 
+		margin: -20px 0px 10px -12px;
+		background-color: #eee;
+		-webkit-box-shadow: 2px 2px 9px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 2px 2px 9px rgba(0, 0, 0, 0.3);
+    box-shadow: 2px 2px 9px rgba(0, 0, 0, 0.3);
+    font-style: normal;
+    font-variant: normal;
+    font-size: 15px;
+    line-height: normal;
+    font-family: "Lucida Sans", "trebuchet MS", Arial, Helvetica;
+    background-image: linear-gradient(#fff, #eee);
+    border-bottom-style: solid;
+    border-bottom-color: inherit;
+    border-bottom-width: 5px;
+}
+    #ePay-Home2 .header {
+		position: relative;
+		color:#ffffff;
+		font-weight: normal;
+		text-transform: uppercase;
+        vertical-align:middle;
+        width:140px;
+		padding: 10px;
+		height: 40px; 
+		margin: -20px 0px 10px -12px;
+		background-color: #eee;
+		-webkit-box-shadow: 2px 2px 9px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 2px 2px 9px rgba(0, 0, 0, 0.3);
+    box-shadow: 2px 2px 9px rgba(0, 0, 0, 0.3);
+    font-style: normal;
+    font-variant: normal;
+    font-size: 15px;
+    line-height: normal;
+    font-family: "Lucida Sans", "trebuchet MS", Arial, Helvetica;
+    background-image: linear-gradient(#fff, #eee);
+    border-bottom-style: solid;
+    border-bottom-color: inherit;
+    border-bottom-width: 5px;
+}
+
+	#ePay-Home .header:after {
+		position: absolute;
+		bottom: 0px; left: 0;
+		height: 3px; width: 100%;
+		content: '';
+	/*	background:#000000;
+		background-image: url(images/bar.png);*/
+	}
+	#ePay-Home2 .header:after {
+		position: absolute;
+		bottom: 0px; left: 0;
+		height: 3px; width: 100%;
+		content: '';
+	/*	background:#000000;
+		background-image: url(images/bar.png);*/
+	}
+	#ePay-Home .popular-plan .header {
+		margin-top: -40px;
+		padding-top: 60px;		
+	}
+    #ePay-Home2 .popular-plan .header {
+		margin-top: -40px;
+		padding-top: 60px;		
+	}
+	#ePay-Home .plan1 .header{
+		border-bottom: 4px solid rgb(12, 110, 149);
+		color: #fff;
+		text-decoration: none;
+		background: rgb(22, 145, 190);
+	}
+
+	#ePay-Home .plan2 .header{
+		border-bottom: 4px solid rgb(10, 75, 117);
+		color: #fff;
+		text-decoration: none;
+		background: rgb(22, 107, 162);
+	}
+
+	#ePay-Home .plan3 .header{
+		border-bottom: 4px solid rgb(16, 34, 44);
+		color: #fff;
+		text-decoration: none;
+		background: rgb(27, 54, 71)
+	}
+
+	#ePay-Home .plan4 .header{
+		border-bottom: 4px solid rgb(9, 18, 25);
+		color: #fff;
+		text-decoration: none;
+		background: rgb(21, 40, 54);
+	}			
+	
+
+    #ePay-Home2 .plan1 .header{
+		border-bottom: 4px solid rgb(12, 110, 149);
+		color: #fff;
+		text-decoration: none;
+		background: rgb(22, 145, 190);
+	}
+
+	#ePay-Home2 .plan2 .header{
+		border-bottom: 4px solid rgb(10, 75, 117);
+		color: #fff;
+		text-decoration: none;
+		background: rgb(22, 107, 162);
+	}
+
+	#ePay-Home2 .plan3 .header{
+		border-bottom: 4px solid rgb(16, 34, 44);
+		color: #fff;
+		text-decoration: none;
+		background: rgb(27, 54, 71)
+	}
+
+	#ePay-Home2 .plan4 .header{
+		border-bottom: 4px solid rgb(9, 18, 25);
+		color: #fff;
+		text-decoration: none;
+		background: rgb(21, 40, 54);
+	}			
+	/* --------------- 
+
+	#ePay-Home .price{
+		font-size: 45px;
+	}
+
+	#ePay-Home .monthly{
+		font-size: 13px;
+		margin-bottom: 20px;
+		text-transform: uppercase;
+		color: #999;
+	}
+
+	--------------- */
+
+	#ePay-Home ul {
+		padding: 0;
+		list-style: none;
+        height:120px;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 2px;
+}
+
+	#ePay-Home .plan li {
+		padding: 0px 0;
+        text-decoration:none;
+        text-align:center;
+		
+	}
+	#ePay-Home .plan li a {
+        text-decoration:none;
+        color:	rgb(22, 107, 162);
+	}
+	
+	#ePay-Home .plan li a:hover {
+		border-bottom: 1px dotted;
+		border-bottom-color:rgb(22, 107, 162);
+     }	
+	 
+
+    #ePay-Home2 ul {
+		padding: 0;
+		list-style: none;
+        height:120px;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 2px;
+}
+
+	#ePay-Home2 .plan li {
+		padding: 0px 0;
+        text-decoration:none;
+        text-align:center;
+		
+	}
+	#ePay-Home2 .plan li a {
+        text-decoration:none;
+        color:	rgb(22, 107, 162);
+	}
+	
+	#ePay-Home2 .plan li a:hover {
+		border-bottom: 1px dotted;
+		border-bottom-color:rgb(22, 107, 162);
+     }	
+/* seperate link style for each container 
+    #ePay-Home .plan1 li a {
+        text-decoration:none;
+        color:	rgb(22, 145, 190);
+	}
+	
+     #ePay-Home .plan1 li a:hover {
+		border-bottom: 1px dotted;
+		border-bottom-color:rgb(22, 145, 190);
+     }
+    #ePay-Home .plan2 li a {
+        text-decoration:none;
+        color:	rgb(22, 107, 162);
+	}
+	#ePay-Home .plan2 li a:hover {
+		border-bottom: 1px dotted;
+		border-bottom-color:rgb(22, 107, 162);
+     }	
+    #ePay-Home .plan3 li a {
+        text-decoration:none;
+        color:	rgb(27, 54, 71);
+	}
+	#ePay-Home .plan3 li a:hover {
+		border-bottom: 1px dotted;
+		border-bottom-color:rgb(27, 54, 71);
+     }	
+    #ePay-Home .plan4 li a {
+        text-decoration:none;
+        color:	rgb(9, 18, 25);
+		}
+	#ePay-Home .plan4 li a:hover {
+		border-bottom: 1px dotted;
+		border-bottom-color:rgb(9, 18, 25);
+     }
+	
+*/
+	#ePay-Home .hr {
+ 		 border: 0;
+ 		 background-color: #BCBEC0;
+  		 color: #BCBEC0;
+ 		 height: 1px;
+  		 width: 190px;
+  		 margin: -10px 0 0 -20px;
+	}
+
+	
+    #ePay-Home .plan1 .header a{
+		border-bottom-color: #0070c0;
+		color: #fff;
+		text-decoration: none;
+	}
+
+	#ePay-Home .plan2 .header a{
+		border-bottom-color: #548235;
+		color: #fff;
+		text-decoration: none;
+	}
+
+	#ePay-Home .plan3 .header a{
+		border-bottom-color: #c55a11;
+		color: #fff;
+		text-decoration: none;
+	}
+
+	#ePay-Home .plan4 .header a{
+		border-bottom-color: #7030a0;
+		color: #fff;
+		text-decoration: none;
+	}			
+
+    #ePay-Home .plan .header a:hover{
+		font-weight:bold;
+	}
+
+
+    #ePay-Home .hr {
+ 		 border: 0;
+ 		 background-color: #BCBEC0;
+  		 color: #BCBEC0;
+ 		 height: 1px;
+  		 width: 190px;
+  		 margin: -10px 0 0 -20px;
+	}
+
+	
+    #ePay-Home2 .plan1 .header a{
+		border-bottom-color: #0070c0;
+		color: #fff;
+		text-decoration: none;
+	}
+
+	#ePay-Home2 .plan2 .header a{
+		border-bottom-color: #548235;
+		color: #fff;
+		text-decoration: none;
+	}
+
+	#ePay-Home2 .plan3 .header a{
+		border-bottom-color: #c55a11;
+		color: #fff;
+		text-decoration: none;
+	}
+
+	#ePay-Home2 .plan4 .header a{
+		border-bottom-color: #7030a0;
+		color: #fff;
+		text-decoration: none;
+	}			
+
+    #ePay-Home2 .plan .header a:hover{
+		font-weight:bold;
+	}
+/*
+	#ePay-Home .plan2 .header a:hover{
+		font-weight:bold;
+	}
+
+	#ePay-Home .plan3 .header a:hover{
+		font-weight:bold;
+	}
+
+	#ePay-Home .plan4 .header a:hover{
+		font-weight:bold;
+	}			
+
+/* --------------- */
+/*---		
+	#ePay-Home .signup {
+		position: relative;
+		padding: 10px 20px;
+		color: #fff;
+		font: 14px Arial, Helvetica;
+		text-transform: uppercase;
+		text-decoration: none;
+		display: inline-block;       
+		background-color: #72ce3f;
+		-moz-border-radius: 3px;
+		-webkit-border-radius: 3px;
+		border-radius: 3px;     
+		text-shadow: 0 -1px 0 rgba(0,0,0,.15);
+		opacity: .9;       
+	}
+
+	#ePay-Home .signup:hover {
+		opacity: 1;       
+	}
+
+	#ePay-Home .signup:active {
+		-moz-box-shadow: 0 2px 2px rgba(0,0,0,.3) inset;
+		-webkit-box-shadow: 0 2px 2px rgba(0,0,0,.3) inset;
+		box-shadow: 0 2px 2px rgba(0,0,0,.3) inset;       
+	}			
+
+	#ePay-Home .plan1 .signup{
+		background: #B3E03F;
+	}
+
+	#ePay-Home .plan2 .signup{
+		background: #7BD553;
+	}
+
+	#ePay-Home .plan3 .signup{
+		background: #3AD5A0;
+	}
+
+	#ePay-Home .plan4 .signup{
+		background: #45D0DA;
+	}	
+ end --------------- */

@@ -1,0 +1,118 @@
+﻿body {
+}
+.navbar {
+    background: #4583e4;
+    text-transform: uppercase;
+    font-family: Arial;
+    font-weight: 900;
+    
+}
+    .navbar a {
+        color: #fff !important;
+        opacity:0.7;
+    }
+   .navbar a:hover {
+            opacity: 1;
+            background: #111111;
+   }
+.header {
+
+height:600px;
+width:100%;
+padding:40px;
+margin-bottom:50px;
+background:url('../Content/IMG/green space.jpg');
+background-position:center center;
+background-repeat:no-repeat;
+background-size:cover;
+}
+.header img{
+    height:350px;
+    margin:70px 0 0 100px;
+}
+.header h3{
+
+    color:white;
+    font-size:40px;
+    font-weight:900;
+    padding:30px;
+}
+    .header h3,
+    .header p,
+    .header .btn {
+        margin-top: 30px;
+        color: white;
+        
+    }
+    .header .btn {
+    
+    margin:40px 20px;
+    border-radius:0;
+    }
+
+    /*This is service section*/
+.services {
+
+    padding:80px 0 80px;
+    text-align:center;
+
+}
+    .services h3, services h4 {
+        color: #4c4c4c;
+        margin:20px 0 20px;
+    }
+    .services p {
+        color: #737373;
+        font-size:14px;
+        padding-bottom:40px;
+    }
+    .services i {
+        height: 80px;
+        width: 80px;
+        font-size: 30px;
+        padding: 25px 25px;
+        border-radius: 200%;
+        background-color: #0e1e7e;
+        Color: #fff;
+    }
+
+
+
+/*This is pricing section*/
+
+.pricing {
+    padding: 50px 0px 80px;
+    text-align: center;
+    background-color: #db752d;
+}
+    .pricing h2, p {
+        color: white;
+    }
+
+.pricing p{
+    padding-bottom:40px;
+}
+.package {
+    padding: 30px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    border-radius:5px;
+    margin-top:10px;
+}
+    .package l, .package p {
+        color: #0e1e7e;
+    }
+    .package li {
+    display:block;
+    padding:5px;
+    
+    }
+    .package h4, .package h1, .package b {
+        color: #4c4c4c;
+    }
+    .package l{
+        text-align:justify;
+    }
+    .package.btn{
+        margin-top:10px !important;
+    }

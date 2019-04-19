@@ -1,0 +1,61 @@
+<html>
+
+
+<head>
+
+
+<script type="text/javascript">
+    
+    
+    function changeStyle()
+    {
+        var para=document.getElementsByTagName("p");
+        para[0].style.fontSize=25;
+        para[1].style.fontSize=30;
+        para[1].style.color="red";
+        para[2].style.fontStyle="italic";
+        para[4].style.color="blue";
+        para[6].style.fontStyle="bold";
+     
+    }
+    
+    function abc()
+    {
+document.getElementById("img1").src="imges.jpg";
+    }
+    function abc()
+    {
+        document.getElementById("img1").src="F:\biztech\javascript\computer2.jpg";
+    }
+    
+    
+    </script>
+
+
+
+
+</head>
+<body>
+<p>This is paragraph 1</p>
+<p>This is paragraph 2</p>
+<p>This is paragraph 3</p>
+<p>This is paragraph 4</p>
+<p>This is paragraph 5</p>
+<p>This is paragraph 6</p>
+
+
+<button onclick="changeStyle()">click</button>
+
+<br>
+
+<img id="img1" src="F:\biztech\javascript\computer2.jpg" onmouseover="abc()" onmouseout="abc()"  width="300">
+
+
+
+
+
+</body>
+
+
+
+</html>

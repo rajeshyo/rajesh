@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="db_imgModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <Function Name="sp_get_all_files" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="sp_get_file_details" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="file_id" Type="int" Mode="In" />
+        </Function>
+        <Function Name="sp_insert_file" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="file_name" Type="nvarchar(max)" Mode="In" />
+          <Parameter Name="file_ext" Type="nvarchar(max)" Mode="In" />
+          <Parameter Name="file_base64" Type="nvarchar(max)" Mode="In" />
+        </Function>
+        <EntityContainer Name="db_imgModelStoreContainer" />
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="db_imgModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityContainer Name="db_imgEntities" annotation:LazyLoadingEnabled="true" >
+          <FunctionImport Name="sp_get_file_details" ReturnType="Collection(db_imgModel.sp_get_file_details_Result)">
+          <Parameter Name="file_id" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="sp_insert_file">
+            <Parameter Name="file_name" Mode="In" Type="String" />
+            <Parameter Name="file_ext" Mode="In" Type="String" />
+            <Parameter Name="file_base64" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="sp_get_all_files" ReturnType="Collection(db_imgModel.sp_get_all_files_Result)" />
+        </EntityContainer>
+        <ComplexType Name="sp_get_file_details_Result">
+          <Property Type="Int32" Name="file_id" Nullable="false" />
+          <Property Type="String" Name="file_name" Nullable="false" />
+          <Property Type="String" Name="file_ext" Nullable="false" />
+          <Property Type="String" Name="file_base6" Nullable="false" />
+        </ComplexType>
+        <ComplexType Name="sp_get_all_files_Result">
+          <Property Type="Int32" Name="file_id" Nullable="false" />
+          <Property Type="String" Name="file_name" Nullable="false" />
+          <Property Type="String" Name="file_ext" Nullable="false" />
+        </ComplexType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="db_imgModelStoreContainer" CdmEntityContainer="db_imgEntities" >
+          <FunctionImportMapping FunctionImportName="sp_get_file_details" FunctionName="db_imgModel.Store.sp_get_file_details">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="db_imgModel.sp_get_file_details_Result">
+                <ScalarProperty Name="file_id" ColumnName="file_id" />
+                <ScalarProperty Name="file_name" ColumnName="file_name" />
+                <ScalarProperty Name="file_ext" ColumnName="file_ext" />
+                <ScalarProperty Name="file_base6" ColumnName="file_base6" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="sp_insert_file" FunctionName="db_imgModel.Store.sp_insert_file" />
+          <FunctionImportMapping FunctionImportName="sp_get_all_files" FunctionName="db_imgModel.Store.sp_get_all_files">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="db_imgModel.sp_get_all_files_Result">
+                <ScalarProperty Name="file_id" ColumnName="file_id" />
+                <ScalarProperty Name="file_name" ColumnName="file_name" />
+                <ScalarProperty Name="file_ext" ColumnName="file_ext" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

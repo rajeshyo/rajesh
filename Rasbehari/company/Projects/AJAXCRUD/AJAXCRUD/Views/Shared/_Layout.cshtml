@@ -1,0 +1,256 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    <link rel="stylesheet" href="~/Content/mycss.css">
+    <link rel="stylesheet" href="~/Content/media.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+
+
+</head>
+<body>
+    <div class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+
+                @*@Html.ActionLink("Application name", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })*@
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#">Service</a></li>
+                    <li><a href="#">Pricing</a></li>
+                    <li><a href="#">Team</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-left">
+                    <li><a href="#">Home</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+
+    <!--navigation bar stop-->
+    <!--header section-->
+    <div id="header" class="header">
+        <div class="row">
+            <div class="col-lg-6 col-md-6">
+                <h3> Responsive website in bootstrap my web</h3>
+                <p>
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book
+                </p>
+                <button class="btn btn-danger btn-lg">view more</button>
+                <button class="btn btn-success btn-lg">Details</button>
+            </div>
+            <div class="col-lg-6 col-md-6">
+                <img src="~/Content/IMG/computer3.jpg">
+
+            </div>
+        </div>
+    </div>
+    <!--header section stop
+
+
+
+
+     <!--service section stop-->
+    <div id="services" class="services">
+        <div class="container">
+            <h3>Our services</h3>
+
+            <div class="row">
+                <div class="col-lg-3">
+                    <i class="fa fa-desktop"></i>
+                    <h4>Web Desi</h4>
+                    <p>
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book
+                    </p>
+
+
+                </div>
+                <div class="col-lg-3">
+
+                    <i class="fa fa-database"></i>
+                    <h4>Data Management and Transformation</h4>
+                    <p>
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book
+                    </p>
+                </div>
+                <div class="col-lg-3">
+                    <i class="fa fa-mobile"></i>
+                    <h4>Mobile Apps Devlopment</h4>
+                    <p>
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book
+                    </p>
+                </div>
+                <div class="col-lg-3">
+                    <i class="fa fa-university"></i>
+                    <h4>Consulting</h4>
+                    <p>
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book
+                    </p>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+    <!--service section stop-->
+
+
+
+
+    <!--pricing section-->
+
+<div id="pricing" class="pricing">
+    <div class="container">
+        <div class="row">
+            <h2>Pricing</h2>
+
+            <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+            </p>
+            <div class="col-lg-3 col-md-3">
+                <div class="package">
+                    <h4>Bronch</h4>
+                    <h1>100</h1>
+                    <b>Monthly</b>
+                    <p>
+                        There are many variations  of Lorem Ipsum available, but the majority have suffered alteration in some form,
+                        by injected humour, which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum,
+                        sn't anything embarrassing hidden in the middle of text.
+                    </p>
+                    <hr>
+                    
+                        <li>50</li>
+                        <li>ssi certification</li>
+                        <li>online support</li>
+                        <li>200Gb Diskspace</li>
+                        <li>100 Email Addresses</li>
+                    <button class="btn btn-success">Buy Now</button>
+                    
+                </div>
+
+            </div>
+
+
+
+            <div class="col-lg-3 col-md-3">
+                <div class="package">
+                    <h4>Bronch</h4>
+                    <h1>100</h1>
+                    <b>Monthly</b>
+                    <p>
+                        There are many variations  of Lorem Ipsum available, but the majority have suffered alteration in some form,
+                        by injected humour, which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum,
+                        sn't anything embarrassing hidden in the middle of text.
+                    </p>
+                    <hr>
+                    <li>50</li>
+                    <li>ssi certification</li>
+                    <li>online support</li>
+                    <li>200Gb Diskspace</li>
+                    <li>100 Email Addresses</li>
+                    <button class="btn btn-success">Buy Now</button>
+                </div>
+
+            </div>
+
+            <div class="col-lg-3 col-md-3">
+                <div class="package">
+                    <h4>Sliver</h4>
+                    <h1>100</h1>
+                    <b>Monthly</b>
+                    <p>
+                        There are many variations  of Lorem Ipsum available, but the majority have suffered alteration in some form,
+                        by injected humour, which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum,
+                        sn't anything embarrassing hidden in the middle of text.
+                    </p>
+                    <hr>
+                    <li>50</li>
+                    <li>ssi certification</li>
+                    <li>online support</li>
+                    <li>230Gb Diskspace</li>
+                    <li>100 Email Addresses</li>
+                    <button class="btn btn-success">Buy Now</button>
+                </div>
+
+            </div>
+            <div class="col-lg-3 col-md-3">
+                <div class="package">
+                    <h4>Gold</h4>
+                    <h1>300</h1>
+                    <b>Monthly</b>
+                    <p>
+                        There are many variations  of Lorem Ipsum available, but the majority have suffered alteration in some form,
+                        by injected humour, which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum,
+                       sn't anything embarrassing hidden in the middle of text.
+                    </p>
+                    <hr>
+                    <ul>
+                        <li>50</li>
+                        <li>ssi certification</li>
+                        <li>online support</li>
+                        <li>200Gb Diskspace</li>
+                        <li>100 Email Addresses</li>
+
+                    </ul>
+                    <button class="btn btn-success">Buy Now</button>
+                </div>
+
+            </div>
+
+
+           
+
+        </div>
+
+
+    </div>
+
+
+
+</div>
+
+    <!--pricing section stop-->
+
+
+
+
+
+
+
+
+
+
+
+    <div class="container body-content">
+        @RenderBody()
+        <hr />
+        <footer>
+            <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
+        </footer>
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>

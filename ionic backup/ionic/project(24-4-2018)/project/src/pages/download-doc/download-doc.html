@@ -1,0 +1,33 @@
+<ion-header>
+  <ion-navbar color="primary">
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Download File</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+ 
+ 
+  <ion-list *ngFor="let d of data">
+
+ 
+  <ion-item >
+    <ion-icon name="clipboard" item-left></ion-icon>
+	<a href="http://magento2solution.com/testing/document.php?modulepart=project&file={{ref}}/{{d.filename}}&DOLAPIKEY=7a6a16e20dda4a342f56b83d364980ee5b0203a6">download</a>
+    <button ion-button outline  item-start color="button-light">
+      {{d.rowid}}&nbsp;&nbsp;||&nbsp;&nbsp; {{d.filepath}}
+    </button>	
+  </ion-item>
+
+
+</ion-list>
+
+</ion-content>
+
+<ion-footer>
+<ion-navbar color="primary">
+<p style=" text-align:center;">Powered By Biztechnosys</p>
+  </ion-navbar>
+</ion-footer>

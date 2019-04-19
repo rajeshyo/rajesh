@@ -1,0 +1,121 @@
+<!--
+  Generated template for the CreatetaskPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar color="primary">
+    <ion-title>Upadate Task</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+<form [formGroup]="todo" (ngSubmit)="submit()">
+<ion-list>
+  <!--<ion-item>
+    <ion-label floating>Task Name</ion-label>
+    <ion-input type="text"  name="label" [(ngModel)]="data.label"></ion-input>
+  </ion-item>
+
+ <ion-item>
+    <ion-label floating>Project Name</ion-label>
+    <ion-input type="text"  name="fk_task_parent" [(ngModel)]="data.fk_task_parent"></ion-input>
+  </ion-item>-->
+
+  <!--<ion-item>
+    <ion-label floating>Assinged To</ion-label>-->
+   <!-- <ion-input type="text"  name="user" [(ngModel)]="data.user"></ion-input>-->
+     <!-- <ion-select name="user" [(ngModel)]="data.user" >
+      <ion-option value="Rahul Patel">Rahul Patel</ion-option>
+      <ion-option value="Raj Planaswamy">Raj Planaswamy</ion-option>
+      <ion-option value="Kalpesh Vaza">Kalpesh Vaza</ion-option>
+      <ion-option value="Admin">Admin</ion-option>-->
+   <!--    <ion-option value="5">5 HOURS</ion-option>
+      <ion-option value="6">6 HOURS</ion-option>
+      <ion-option value="7">7 HOURS</ion-option>
+      <ion-option value="8">8 HOURS</ion-option>
+      <ion-option value="9">9 HOURS</ion-option>
+      <ion-option value="10">10 HOURS</ion-option>
+      <ion-option value="11">11 HOURS</ion-option>
+      <ion-option value="12">12 HOURS</ion-option> 
+  </ion-select>
+  </ion-item>-->
+
+  <!--<ion-item>
+    <ion-label floating>Start Date</ion-label>
+    <ion-datetime displayFormat="MMM DD, YYYY HH:mm" name="date_start" [(ngModel)]="data.date_start"></ion-datetime>
+  </ion-item>
+ 
+  <ion-item>
+  <ion-label floating>End Date</ion-label>
+    <ion-datetime displayFormat="MMM DD, YYYY HH:mm" name="date_end" [(ngModel)]="data.date_end"></ion-datetime>
+  </ion-item>-->
+  
+ <!-- <ion-item>
+    <ion-label floating>Planned Workload</ion-label> 
+    <ion-datetime displayFormat="HH:mm" name="planned_workload" [(ngModel)]="data.planned_workload"></ion-datetime>
+  </ion-item> -->
+
+   <!-- <ion-item>
+  <ion-label floating>Planned Workload</ion-label> 
+  <ion-select name="planned_workload" [(ngModel)]="data.planned_workload" >
+      <ion-option value="1">1 HOURS</ion-option>
+      <ion-option value="2">2 HOURS</ion-option>
+      <ion-option value="3">3 HOURS</ion-option>
+      <ion-option value="4">4 HOURS</ion-option>
+      <ion-option value="5">5 HOURS</ion-option>
+      <ion-option value="6">6 HOURS</ion-option>
+      <ion-option value="7">7 HOURS</ion-option>
+      <ion-option value="8">8 HOURS</ion-option>
+      <ion-option value="9">9 HOURS</ion-option>
+      <ion-option value="10">10 HOURS</ion-option>
+      <ion-option value="11">11 HOURS</ion-option>
+      <ion-option value="12">12 HOURS</ion-option>
+  </ion-select>
+</ion-item>-->
+
+<ion-item>
+		  <ion-label floating>Declared Progress*</ion-label>
+		  <ion-select formControlName="progress" [(ngModel)]="data.progress" >
+			  <ion-option value="10">10%</ion-option>
+			  <ion-option value="20">20%</ion-option>
+			  <ion-option value="30">30%</ion-option>
+			  <ion-option value="40">40%</ion-option>
+			  <ion-option value="50">50%</ion-option>
+			  <ion-option value="60">60%</ion-option>
+			  <ion-option value="70">70%</ion-option>
+			  <ion-option value="80">80%</ion-option>
+			  <ion-option value="90">90%</ion-option>
+			  <ion-option value="100">100%</ion-option>
+		  </ion-select>
+       </ion-item>
+	   
+	   <!--<ion-item>
+        <ion-label floating>Description</ion-label>
+        <ion-textarea formControlName="description" [(ngModel)]="data.description"></ion-textarea>
+      </ion-item>-->
+	  
+	  <ion-item>
+    <ion-label floating>Remarks*</ion-label>
+    <ion-textarea  formControlName="note_public" [(ngModel)]="data.note_public"></ion-textarea>
+  </ion-item>
+
+</ion-list>
+  <div padding> 
+  <button block ion-button type="submit" [disabled]="!todo.valid">Submit</button>
+  <!--(click)="pushPage()"-->
+</div>
+    </form>
+
+</ion-content>
+
+<ion-footer>
+<ion-navbar color="primary">
+<p style=" text-align:center;">Powered By Biztechnosys</p>
+  </ion-navbar>
+</ion-footer>

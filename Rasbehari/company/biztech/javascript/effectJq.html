@@ -1,0 +1,108 @@
+<html>
+<head>
+    <title>
+
+    </title>
+    <link rel="stylesheet" href="mycss.css">
+</head>
+
+<body>
+    <h2>Now start  jequery</h2>
+
+
+<div id="div1">
+    <p>
+        some text here
+    </p>
+</div>
+   <div id="div2">
+        <ul>
+            <li> List item 1</li>
+            <li> List item 2</li>
+            <li> List item 3</li>
+            <li> List item 4</li>
+        </ul>
+    
+    </div>
+    <div id="div3">
+            <ul>
+                <li> List item 1</li>
+                <li> List item 2</li>
+                <li> List item 3</li>
+                <li> List item 4</li>
+            </ul>
+        
+        </div>
+    <button  id="btn1">hide1</button>
+    <button  id="btn2">show2</button>
+    <button  id="btn3">toggle</button>
+
+
+
+
+
+    <button  id="btn4">effect</button>
+    <div class="mycube" id="cube">
+            <p>
+                    cube hfdfhas jhvdhhjvd  kavsdjavdjhavsd avdsjavds
+            </p>
+        </div>
+
+</body>
+<script src="F:\biztech\javascript\js\jquery-3.3.1.js"></script>
+
+
+<script>
+   $(document).ready(function() {
+     /*  $("#btn2").click(function() {
+         //  $("#div3,#div2").hide();
+         $("#div3,#div2").slideDown(2000);
+
+       });
+       $("#btn1").click(function(){
+          // $("#div3,#div2").show();
+        //  $("#div3,#div2").slideUp(3000);
+
+       });
+
+       $("#btn3").click(function(){
+          
+        //  $("#div3,#div2").slideToggle(3000);
+
+       });*/
+       
+       $("#btn4").click(function(){
+
+           //alert();
+           $("#cube").animate({
+               left:'200px',
+               opacity:'1',
+               height:'300px',
+               width:'300px',
+               
+
+           },2000)
+
+
+       });
+
+       $("#btn3").click(function(){
+          
+           $("#div3").slideUp(2000).slideDown(2000).fadeOut(2000).fadeIn(2000);
+  
+         });
+
+
+
+
+   });
+
+
+
+
+</script>
+
+
+
+
+</html>

@@ -1,0 +1,13 @@
+.mycube{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(93, 93, 214);
+    opacity: 0.4;
+    position: absolute;
+    padding: 20px;
+}
+.mycube p{
+    color: wheat;
+    font-size: 15px;
+    font-weight: bold;
+}

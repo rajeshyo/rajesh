@@ -1,0 +1,103 @@
+<ion-header>
+  <ion-navbar color="primary">
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Project List</ion-title>
+   <ion-buttons right  *ngIf="user">
+      <button ion-button icon-only (click)="myTask($event,user.id)">My Task</button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <!-- <ion-list>
+    <button ion-item *ngFor="let item of items" (click)="itemTapped($event, item)">
+      <ion-icon name="{{item.icon}}" item-left></ion-icon>
+      {{item.title}}
+      <div class="item-note" item-right>
+        {{item.note}}
+      </div>
+    </button>-->
+ 
+  <ion-list *ngFor="let dataa of data">
+
+  <!-- Item with left and right buttons -->
+  <!-- <ion-item *ngFor="let dataa of data">
+    <ion-icon name="clipboard" item-left></ion-icon>
+    <button ion-button outline  item-start color="button-light" (click)="viewItem($event,dataa)">
+      {{dataa.title}}
+    </button>
+     </ion-item>
+    
+      <ion-item *ngFor="let dataa of data">
+    <button ion-button  item-end  color="button-light" (click)=" viewTasklist($event,dataa)">
+         <ion-icon name="alarm" item-start> Task</ion-icon>
+        
+    </button>
+    <ion-badge outline item-end>2</ion-badge>
+  </ion-item> -->
+
+ <!-- <ion-row>
+    <ion-col >
+    <div *ngFor="let dataa of data" >
+        <ion-item  *ngIf=" dataa.statut !== '2'">
+            <ion-icon name="clipboard" item-left></ion-icon>
+                  <button ion-button outline  item-start color="button-light" (click)="viewItem($event,dataa)">
+      {{dataa.id}}&nbsp;&nbsp;||&nbsp;&nbsp;{{dataa.title}}
+    </button>
+        </ion-item>
+  </div>
+    </ion-col>
+      <ion-col>
+      <div *ngFor="let dataa of data"> 
+        <ion-item  *ngIf=" dataa.statut !== '2'" >
+           <button ion-button  item-end  color="button-light" (click)=" viewTasklist($event,dataa.id)" >
+           <ion-icon name="alarm" item-start> Task</ion-icon>     
+       </button>
+    <ion-badge outline item-end>{{dataa.id.length}}</ion-badge>
+        </ion-item>
+      </div>
+    </ion-col>
+</ion-row>-->
+
+  <ion-item  *ngIf=" dataa.statut == 1">
+    <ion-icon name="clipboard" item-left></ion-icon>
+    <button ion-button outline  item-start color="button-light" (click)="viewItem($event,dataa)">
+      {{dataa.id}}&nbsp;&nbsp;||&nbsp;&nbsp; {{dataa.ref}}
+    </button>
+    
+    <button ion-button  item-end  color="button-light" (click)="viewTasklist($event,dataa.id)">
+         <ion-icon name="alarm" item-start> Task</ion-icon>
+        
+    </button>
+    <ion-badge outline item-end></ion-badge>
+	<!--<a href="http://magento2solution.com/tesst/document.php?modulepart=project&file=PJ1711-0002-JDBS5731048344-1.png">click on</a>-->
+	
+	
+	<!--<a href ="http://magento2solution.com/testing/document.php?modulepart=project&file={{dataa.title}}">Download</a>-->
+	
+	 <button ion-button  item-end  color="button-light" (click)="downloadFile($event,dataa.ref)">
+         <ion-icon name="alarm" item-start> Download </ion-icon>
+        
+    </button>
+  </ion-item>
+  <!-- Sliding item -->
+  <!-- <ion-item-sliding>
+    <ion-item>
+      Item
+    </ion-item>
+    <ion-item-options>
+      <button ion-button color="primary" (click)="archive()">Archive</button>
+    </ion-item-options>
+  </ion-item-sliding> -->
+
+</ion-list>
+
+</ion-content>
+
+<ion-footer>
+<ion-navbar color="primary">
+<p style=" text-align:center;">Powered By Biztechnosys</p>
+  </ion-navbar>
+</ion-footer>

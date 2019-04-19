@@ -1,0 +1,84 @@
+<html>
+    <head>
+        <script type="text/javascript">
+            
+            function validate()
+            {
+                var uname=document.getElementById("uname");
+                var pass1=document.getElementById("pass1");
+                var pass2=document.getElementById("pass2");
+                var umsg=document.getElementById("umsg");
+
+
+                if(uname.value==""||uname.value.trim()=="")
+                {
+                    alert("Enter name and space not allow");
+                    uname.style.border="solid 3px red";
+                    umsg.style.visibility="visible";
+
+                    return false;
+                    
+
+                }
+                else if(!isNaN(uname.value)){
+                    alert("number not allow");
+                    uname.style.border="solid 3px red";
+                    umsg.style.visibility="visible";
+                    return false;
+                    
+
+                }
+                
+              else  if(pass1.value==""||pass1.value.trim()=="")
+                {
+                    pass1.style.border="solid 3px red";
+                    alert("Enter password and space not allow");
+                    
+                    return false;
+
+                }
+                
+               else if(pass2.value==""||pass2.value.trim()=="")
+                {
+                    alert("Re-enter password and space not allow");
+                    pass2.style.border="solid 3px red";
+                    return false;
+
+                }
+                else if(pass1.value!=pass2.value)
+                {
+                    alert("Password not match");
+                    return false;
+                }
+                else{
+                    true;
+
+                }
+
+
+            }
+            
+            
+            </script>
+
+    </head>
+    <body>
+        <form onsubmit="return validate()" action="message.htm">
+            <input type="text" placeholder="Enter Name" id="uname">
+            <label id="umsg" style="color:red; visibility: hidden;">Invalid Name</label>
+            
+            <br><br>
+            <input type="password" placeholder="Enter password" id="pass1"><br><br>
+            <input type="password" placeholder="Re-enter password" id="pass2"><br>
+            <br>
+            <button type="submit">Submit</button>
+
+
+
+
+
+
+        </form>
+
+    </body>
+</html>

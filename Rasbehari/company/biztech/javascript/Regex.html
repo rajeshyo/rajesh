@@ -1,0 +1,91 @@
+<html>
+    <head>
+        <script type="text/javascript">
+            function validate()
+            {
+                var uname=document.getElementById("uname").value;
+                var umsg=document.getElementById("umsg");
+                var regx=/@biztechnosys/i;
+              var reg=/1nh16mca/i;
+                if((regx.test(uname))||(reg.test(uname)))
+                {
+                   // alert("valid");
+                  // umsg.style.visibility="visible";
+                    document.getElementById("umsg").innerHTML="valid";
+                    
+                }
+                else{
+                    //umsg.style.visibility="visible";
+                    document.getElementById("umsg").innerHTML="invalid";
+                }
+
+
+
+
+            }
+
+
+
+//               Mobile number validation......
+
+
+function Mobvalidate(){
+
+
+var mob=document.getElementById("mob").value;
+
+// var reg=/^[7-9]\d{9}$/; mobile number validation
+// var reg=/^[5-9]\w{8}0$/;
+var reg=/^([a-z0-9\.-]+)@([a-z0-9-]+).([a-z]{2,8})(.[a-z]{2,8})?$/;    
+
+if(reg.test(mob)){
+document.getElementById("msg").innerHTML="valid";
+msg.style.color="green";
+}
+else{
+    document.getElementById("msg").innerHTML="Invalid";
+    msg.style.color="red";
+}
+
+}
+
+
+
+
+            
+        </script>
+
+    </head>
+    <body>
+        <form action="#S">
+         <input type="text" placeholder="Enter Name" id="uname">
+       <p id="umsg" style="color:red;"></p>
+         <label ></label>
+         <button type="button" onclick="validate()">Submit</button>
+
+
+
+<br>
+
+
+         <input type="text" placeholder="Enter Name" id="mob">
+         <p id="msg"></p>
+           <label ></label>
+           <button type="button" onclick="Mobvalidate()">mobil</button>
+  
+
+          
+
+
+
+
+
+
+        </form>
+
+
+
+
+
+    </body>
+</html>

@@ -1,0 +1,73 @@
+<!--
+  Generated template for the ExpensePage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar color="primary">
+    <ion-title>ADD Expense</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+<form [formGroup]="todo" (ngSubmit)="submit()">
+
+<ion-list>
+   <ion-item >
+  <ion-label floating>User*</ion-label> 
+  <ion-select   formControlName="user_author_info" [(ngModel)]="data.user_author_info"  >
+      <ion-option *ngFor="let user of userdata" value={{user.id}}>{{user.lastname}}{{user.firstname}}</ion-option>
+  </ion-select>
+</ion-item>
+ <!--  <ion-item>
+    <ion-label floating>User responsible for approval</ion-label>
+    <ion-select name="user_validator_infos" [(ngModel)]="data.user_validator_infos" >
+      <ion-option value="1">SuperAdmin</ion-option>
+      <ion-option value="2">patel rahul</ion-option>
+      <ion-option value="3">planaswamy raj</ion-option>
+      <ion-option value="4">Kalpesh vaza</ion-option>
+  </ion-select>
+  </ion-item>
+ -->
+ <ion-item>
+    <ion-label floating>Date*</ion-label>
+    <ion-datetime displayFormat="MMM DD, YYYY" formControlName="date_create" [(ngModel)]="data.date_create"></ion-datetime>
+  </ion-item>
+
+ <!-- <ion-item> -->
+    <!-- <ion-label floating>Project Name</ion-label> -->
+    <!-- <ion-input type="text"  name="projet_title" [(ngModel)]="data.projet_title"  ></ion-input> -->
+  <!-- </ion-item> -->
+
+  <!-- <ion-item> -->
+    <!-- <ion-label floating>Expense Type</ion-label> -->
+     <!-- <ion-select name="type_fees_libelle" [(ngModel)]="data.type_fees_libelle" > -->
+      <!-- <ion-option value="Lunch">Lunch</ion-option> -->
+      <!-- <ion-option value="Transportation">Transportation</ion-option> -->
+      <!-- <ion-option value="Salary">Salary</ion-option> -->
+      <!-- <ion-option value="Other">Other</ion-option> -->
+  <!-- </ion-select> -->
+  <!-- </ion-item> -->
+
+
+  <ion-item>
+    <ion-label floating>Discription*</ion-label>
+    <ion-textarea  formControlName="note_private" [(ngModel)]="data.note_private"></ion-textarea>
+  </ion-item>
+
+</ion-list>
+
+<div padding> 
+  <button block ion-button  (click)="submitexpense()">Submit</button>
+  </div>
+  </form>
+</ion-content>
+<ion-footer>
+<ion-navbar color="primary">
+<p style=" text-align:center;">Powered By Biztechnosys</p>
+  </ion-navbar>
+</ion-footer>

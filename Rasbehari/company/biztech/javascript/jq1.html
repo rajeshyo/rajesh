@@ -1,0 +1,63 @@
+<html>
+<head>
+    <title>
+
+    </title>
+</head>
+
+<body>
+    <h2>Now start  jequery</h2>
+
+
+<div id="div1">
+    <p>
+        some text here
+    </p>
+</div>
+<div id="div2">
+        <ul>
+            <li> List item 1</li>
+            <li> List item 2</li>
+            <li> List item 3</li>
+            <li> List item 4</li>
+        </ul>
+    
+    </div>
+
+
+
+    <button  id="btn">click</button>
+    <button  id="btn1">double click</button>
+
+</body>
+<script src="F:\biztech\javascript\js\jquery-3.3.1.js"></script>
+
+
+<script>
+    //$("btn1").click(fun1);
+    $("#btn1").mouseenter(fun2);
+    $("#btn1").mouseleave(fun3);
+
+function fun1()
+{
+    $("#div2").fadeToggle(200);
+}
+
+function fun2()
+{
+    $("#div2").fadeOut(2000);
+}
+function fun3()
+{
+    $("#div2").fadeIn(2000);
+}
+
+
+
+
+</script>
+
+
+
+
+</html>

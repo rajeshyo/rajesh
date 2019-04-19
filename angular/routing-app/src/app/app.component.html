@@ -1,0 +1,35 @@
+<div class="main">
+  <h1>Item List</h1><hr>
+  <div class="additem">
+
+    <!-- creating model from input text-->
+    <input type="text" [(ngModel)] = "newitem" placeholder="Add Item" class="addText">
+    <button (click)="pushitem()">ADD</button>
+  </div>
+  <ul>
+    <!-- ngfor loopin and index finding each array-->
+    <li *ngFor="let i of item; let ind of index">
+      <!-- {{binding the data}}-->
+      {{i | uppercase}}
+      <!--this is click function calling-->
+      <button (click)= "removeitem()">x</button>
+    </li>
+  </ul>
+</div>
+<hr>
+<h1>Pipline concept</h1>
+<!--pipe line concept -->
+{{day}} <br>
+{{day | date}} <br>
+{{day | date: 'shortDate'}} <br>
+{{day | date: 'fullDate'| uppercase}} <br> 
+<hr>
+<!--template form concept -->
+<h1>form component</h1>
+<form class="contener"
+#userForm="ngForm"
+(ngSubmit) = "onsubmit(userForm.value)">
+  <input type="text" name="firstname" placeholder="enter first name" ngModel><br>
+  <input type="text" name="lastname" placeholder="Enter last name" ngModel><br>
+  <input type="submit" value="submit">
+</form>

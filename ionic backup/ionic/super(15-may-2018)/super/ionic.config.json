@@ -1,0 +1,14 @@
+{
+  "name": "super",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular",
+  "proxies": [
+    {
+      "path": "/api",
+      "proxyUrl": "http://magento2solution.com/store/modules/Mobile/"
+    }
+  ],
+  "id": "0fdaf45b"
+}

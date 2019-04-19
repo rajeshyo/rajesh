@@ -1,0 +1,116 @@
+<html>
+
+
+
+<head>
+    <script type="text/javascript">
+    /* // fadein and fadeout 
+        var opacity=0;
+        var intervalID=0;
+        function fadeout()
+        {
+            intervalID=setInterval(hide,20);
+        }
+        function hide()
+        {
+            var img=document.getElementById("img1");
+            opacity=Number(window.getComputedStyle(img).getPropertyValue("opacity"));
+            if(opacity>0)
+            {
+                opacity=opacity-0.1;
+                img.style.opacity=opacity;
+            }
+            else{
+                clearInterval(intervalID);
+            }
+            function show()
+            {
+                var img=document.getElementById("img1");
+            opacity=Number(window.getComputedStyle(img).getPropertyValue("opacity"));
+            if(opacity<1)
+            {
+                opacity=opacity+0.1;
+                img.style.opacity=opacity;
+            }
+            else{
+                clearInterval(intervalID);
+            }
+            }
+        function fadein()
+        {
+            intervalID=setInterval(show,20);
+        }   
+        }
+        */
+        var width=250;
+        var diffrence=2.5;
+        var intervalID=0;
+        function increse()
+        {
+            clearInterval(intervalID);
+            intervalID = setInterval(zoomIn,20);
+
+        }
+        function zoomIn()
+        {
+            if(width<700)
+            {
+                width=width+diffrence;
+                document.getElementById("img2").style.width=width;
+            }
+            else
+            {
+                clearInterval(intervalID);
+            }
+
+        }
+        function decrease()
+        {
+            clearInterval(intervalID);
+            intervalID = setInterval(zoomOut,20);
+
+        }
+        function zoomOut()
+        {
+            if(width>250)
+            {
+                width=width-diffrence;
+                document.getElementById("img2").style.width=width;
+            }
+            else
+            {
+                clearInterval(intervalID);
+            }
+
+        }
+
+
+
+
+        </script>
+</head>
+
+<body>
+
+<button onclick="fadeout()" id="btnadd">fadeout</button>
+<img id="img1" src="F:\biztech\javascript\computer.jpg" width="250px"/>
+<button onclick="fadein()" id="btnstop">fadein</button>
+
+
+
+
+
+
+<br/>
+<br/>
+<img id="img2" onmouseover="increse()" onmouseout="decrease()" src="F:\biztech\javascript\computer2.jpg" width="250px"/>
+
+
+
+
+
+</body>
+
+
+
+</html>

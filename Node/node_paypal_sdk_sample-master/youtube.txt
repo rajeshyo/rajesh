@@ -1,0 +1,25 @@
+This is youtube video link
+https://www.youtube.com/watch?reload=9&v=7k03jobKGXM
+
+This is my paypal account details
+This is main paypal link 
+https://developer.paypal.com/
+
+nhcerajesh@gmail.com
+r25071995
+
+
+This is sandbox account details
+To login sandbox link
+https://www.sandbox.paypal.com/
+
+This is Business (Merchant Account) account details sandbox
+nhcerajeshbus1@gmail.com
+r25071995
+
+
+This is Personal (Buyer Account) account details sandbox
+
+nhcerajeshper1@gmail.com
+r25071995
+

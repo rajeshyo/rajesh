@@ -1,0 +1,95 @@
+<!--
+  Generated template for the CreatetaskPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar color="primary">
+    <ion-title>Create Task</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+<form [formGroup]="todo" (ngSubmit)="submit()">
+      <ion-item>
+        <ion-label floating>Task Name*</ion-label>
+        <ion-input type="text" formControlName="label" [(ngModel)]="data.label"></ion-input>
+      </ion-item>
+	  <ion-item>
+       <ion-label floating>Start Date</ion-label>
+       <ion-datetime displayFormat="MMM DD, YYYY HH:mm" formControlName="date_start" [(ngModel)]="data.date_start"></ion-datetime>
+      </ion-item>
+	  <ion-item>
+       <ion-label floating>End Date</ion-label>
+       <ion-datetime displayFormat="MMM DD, YYYY HH:mm" formControlName="date_end" [(ngModel)]="data.date_end"></ion-datetime>
+      </ion-item>
+      
+	  <ion-item>
+		  <ion-label floating>Planned Workload</ion-label> 
+		  <ion-select formControlName="planned_workload" [(ngModel)]="data.planned_workload" >
+			  <ion-option value="3600">1 HOURS</ion-option>
+			  <ion-option value="7200">2 HOURS</ion-option>
+			  <ion-option value="10800">3 HOURS</ion-option>
+			  <ion-option value="14400">4 HOURS</ion-option>
+			  <ion-option value="18000">5 HOURS</ion-option>
+			  <ion-option value="21600">6 HOURS</ion-option>
+			  <ion-option value="25200">7 HOURS</ion-option>
+			  <ion-option value="28800">8 HOURS</ion-option>
+			  <ion-option value="32400">9 HOURS</ion-option>
+			  <ion-option value="36000">10 HOURS</ion-option>
+			  <ion-option value="39600">11 HOURS</ion-option>
+			  <ion-option value="43200">12 HOURS</ion-option>
+		  </ion-select>
+       </ion-item>
+
+       <ion-item>
+		  <ion-label floating>Declared Progress</ion-label>
+		  <ion-select formControlName="progress" [(ngModel)]="data.progress" >
+			  <ion-option value="10">10%</ion-option>
+			  <ion-option value="20">20%</ion-option>
+			  <ion-option value="30">30%</ion-option>
+			  <ion-option value="40">40%</ion-option>
+			  <ion-option value="50">50%</ion-option>
+			  <ion-option value="60">60%</ion-option>
+			  <ion-option value="70">70%</ion-option>
+			  <ion-option value="80">80%</ion-option>
+			  <ion-option value="90">90%</ion-option>
+			  <ion-option value="100">100%</ion-option>
+		  </ion-select>
+       </ion-item>
+	   
+	   <ion-item>
+        <ion-label floating>Description*</ion-label>
+        <ion-textarea formControlName="description" [(ngModel)]="data.description"></ion-textarea>
+      </ion-item>
+	  
+	  <ion-item>
+    <ion-label floating>Remarks</ion-label>
+    <ion-textarea  formControlName="note_public" [(ngModel)]="data.note_public"></ion-textarea>
+  </ion-item>
+
+ <!-- <ion-item >
+  <ion-label floating>Assing to</ion-label> 
+  <ion-select  name="user_author_info" [(ngModel)]="data.user_author_info" >
+      <ion-option *ngFor="let user of userdata" value={{user.id}}>{{user.lastname}}{{user.firstname}}</ion-option>
+  </ion-select>
+</ion-item>-->
+      
+	  <div padding> 
+  <button block ion-button type="submit" [disabled]="!todo.valid">Submit</button>
+  <!--(click)="pushPage()"-->
+</div>
+
+    </form>
+</ion-content>
+
+<ion-footer>
+<ion-navbar color="primary">
+<p style=" text-align:center;">Powered By Biztechnosys</p>
+  </ion-navbar>
+</ion-footer>

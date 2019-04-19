@@ -1,0 +1,8 @@
+Angular project run 
+cd client 
+npm run start
+
+Mongo db
+node server.js
+
+https://www.youtube.com/watch?v=HpXGf6LEiX4

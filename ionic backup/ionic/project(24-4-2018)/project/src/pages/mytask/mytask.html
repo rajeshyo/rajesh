@@ -1,0 +1,41 @@
+<ion-header>
+  <ion-navbar color="primary">
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>My TaskList</ion-title>
+        <ion-buttons right *ngIf="tdata">
+      <!--<button ion-button icon-only (click)="addTask($event,tdata.fk_project)"><ion-icon name="add-circle" ></ion-icon></button>-->
+    </ion-buttons>
+  <!--   <ion-buttons right>
+      <button ion-button icon-only (click)="pushTask()"><ion-icon name="add-circle" ></ion-icon></button>
+    </ion-buttons>-->
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+
+  <!-- Item with left and right buttons -->
+  <ion-item *ngFor="let usertask of usertasklist">
+    <ion-icon name="clipboard" item-left></ion-icon>
+    <button ion-button outline  item-start color="button-light" (click)="viewuserTaskDetails($event,usertask)">
+      {{usertask.rowid}}&nbsp;&nbsp;||&nbsp;&nbsp; {{usertask.ref}}
+    </button>
+    <button ion-button outline  item-start color="button-light" (click)="viewuserTaskDetails($event,usertask)">
+      {{usertask.title}}&nbsp;&nbsp;||&nbsp;&nbsp; {{usertask.tskprg}}
+    </button>
+    <button ion-button  item-end  color="button-light" (click)="viewuserTaskDetails($event,usertask)">
+         <ion-icon name="alarm" item-start> Task</ion-icon>    
+    </button>
+    <ion-badge outline item-end></ion-badge>
+  </ion-item>
+</ion-list>
+
+</ion-content>
+
+<ion-footer>
+<ion-navbar color="primary">
+<p style=" text-align:center;">Powered By Biztechnosys</p>
+  </ion-navbar>
+</ion-footer>

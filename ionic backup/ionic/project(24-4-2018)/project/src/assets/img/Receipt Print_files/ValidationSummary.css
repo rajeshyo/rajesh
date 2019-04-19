@@ -1,0 +1,45 @@
+﻿/* ----- Validation and error messages class starts -----*/
+.validationsummary {
+	/*border: 1px solid #b08b34;*/
+    border:#145983 1px solid;
+	background: transparent url(images/WarningHeader.gif) no-repeat 12px 30px;
+	/*padding: 0px 0px 13px 0px;*/
+	padding:0px 0px 2px 0px;
+	font-size:12px;
+	color:Red;
+	width:99%;
+}
+.validationheader {
+	left: 0px;
+	position: relative;
+	font-size: 11px;
+	/*background-color: #e5d9bd;*/
+    background-color: #1D84BF;
+	/*color: #56300a;*/
+    color:#ffffff;
+	height: 14px;
+	font-weight: bold;
+	/*border-bottom: 1px solid #b08b34;*/
+    border:#145983 1px solid;
+	padding-top: 3px;
+	text-align:left;
+}
+.validationsummary ul {
+	/*padding-top: 5px;
+	padding-left: 45px;*/
+	list-style:none;
+	font-size: 11px;
+	/*color:#982b12;*/
+    color:#ff0000;
+	/*color:black;*/
+
+	font-style:italic;
+}
+.validationsummary ul li {
+	padding: 2px 0px 0px 15px !important;
+	background-image:url(images/Warning.gif) !important;
+	background-position:0px 3px !important;
+	background-repeat:no-repeat !important;
+	text-align:left;
+}
+/* -- --Validation and error messages class ends -- --*/

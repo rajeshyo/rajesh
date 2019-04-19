@@ -1,0 +1,58 @@
+<ion-header>
+  <ion-navbar color="primary">
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Expense List</ion-title>
+        <ion-buttons right>
+      <button ion-button icon-only (click)="addExpense()"><ion-icon name="add-circle" ></ion-icon></button>
+    </ion-buttons>
+  <!--   <ion-buttons right>
+      <button ion-button icon-only (click)="addExpense()"><ion-icon name="add-circle" ></ion-icon></button>
+    </ion-buttons>-->
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <!-- <ion-list>
+    <button ion-item *ngFor="let item of items" (click)="itemTapped($event, item)">
+      <ion-icon name="{{item.icon}}" item-left></ion-icon>
+      {{item.title}}
+      <div class="item-note" item-right>
+        {{item.note}}
+      </div>
+    </button>-->
+ 
+  <ion-list>
+
+  <!-- Item with left and right buttons -->
+  <ion-item *ngFor="let edata of ExpenseData">
+    <ion-icon name="clipboard" item-left></ion-icon>
+    <button ion-button outline  item-start color="button-light" >
+	    {{edata.ref}}
+    </button>
+   
+     <button ion-button outline   item-end   color="button-light">
+     {{edata.total_ttc}}
+    </button>
+
+  </ion-item>
+  <!-- Sliding item -->
+  <!-- <ion-item-sliding>
+    <ion-item>
+      Item
+    </ion-item>
+    <ion-item-options>
+      <button ion-button color="primary" (click)="archive()">Archive</button>
+    </ion-item-options>
+  </ion-item-sliding> -->
+
+</ion-list>
+
+</ion-content>
+
+<ion-footer>
+<ion-navbar color="primary">
+<p style=" text-align:center;">Powered By Biztechnosys</p>
+  </ion-navbar>
+</ion-footer>

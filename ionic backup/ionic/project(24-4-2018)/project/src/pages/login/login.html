@@ -1,0 +1,30 @@
+<ion-header>
+  <ion-navbar color="primary">
+    <ion-title><img src="assets/img/logo.png"></ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <h2>Please, Login</h2>
+  <form (submit)="doLogin(loginData)">
+    <ion-item>
+      <ion-label stacked>Username</ion-label>
+      <ion-input [(ngModel)]="loginData.login" name="login" type="text" placeholder="Username" ></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label stacked>Password</ion-label>
+      <ion-input [(ngModel)]="loginData.password" name="password" type="password" placeholder="Password"></ion-input>
+    </ion-item>
+    <ion-item padding>
+    <button ion-button block type="submit">
+      Login
+    </button>
+		</ion-item>
+  </form>
+</ion-content>
+
+<ion-footer>
+<ion-navbar color="primary">
+<p style=" text-align:center;">Powered By Biztechnosys</p>
+  </ion-navbar>
+</ion-footer>

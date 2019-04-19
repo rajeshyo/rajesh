@@ -1,0 +1,21 @@
+<ion-menu [content]="content" persistent="true">
+
+  <ion-header >
+    <ion-toolbar color="primary">
+	  <ion-list>
+      <ion-title><ion-icon name="albums"></ion-icon>&nbsp;&nbsp;&nbsp;Tools</ion-title>
+	    </ion-list>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-content>
+    <ion-list>
+      <button ion-item *ngFor="let p of pages" (click)="openPage(p)">
+        {{p.title}}
+      </button>
+    </ion-list>
+  </ion-content>
+
+</ion-menu>
+
+<ion-nav [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html ng-app="ionicApp">
+
+<!-- Mirrored from ionicframework.com/present-ionic/slides/demos/tabs/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 19 Feb 2019 06:00:10 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+  <link href="../../ionic/css/ionic.css" rel="stylesheet">
+  <script src="../../ionic/js/ionic.bundle.js"></script>
+  <script src="index.js"></script>
+</head>
+
+<body>
+
+  <ion-nav-bar class="nav-title-slide-ios7 bar-positive">
+    <ion-nav-back-button class="button-icon ion-arrow-left-c">
+    </ion-nav-back-button>
+  </ion-nav-bar>
+
+  <ion-nav-view animation="slide-left-right"></ion-nav-view>
+
+  <script id="tabs.html" type="text/ng-template">
+    <ion-tabs class="tabs-icon-top tabs-positive">
+
+      <ion-tab title="Home" icon="ion-home" href="#/tab/home">
+        <ion-nav-view name="home-tab"></ion-nav-view>
+      </ion-tab>
+
+      <ion-tab title="About" icon="ion-ios7-information" href="#/tab/about">
+        <ion-nav-view name="about-tab"></ion-nav-view>
+      </ion-tab>
+
+      <ion-tab title="Contact" icon="ion-ios7-world" ui-sref="tabs.contact">
+        <ion-nav-view name="contact-tab"></ion-nav-view>
+      </ion-tab>
+
+    </ion-tabs>
+  </script>
+
+</body>
+
+<!-- Mirrored from ionicframework.com/present-ionic/slides/demos/tabs/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 19 Feb 2019 06:00:11 GMT -->
+</html>

@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-toolbar>  
+      <ion-title>
+          <ion-button href="/news"><ion-icon name="arrow-round-back"></ion-icon></ion-button>
+        {{article.title}}
+      </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <ion-img [src]="article.urlToImage"></ion-img>
+
+    <ion-card-content>
+      <ion-card-title>{{article.title}}</ion-card-title>
+      <p>Author: {{article.author}}</p>
+      <p>PublishedAt: {{article.publishedAt}}</p>
+      <p>Description: {{article.description}}</p>
+      <p>Content: {{article.content}}</p>
+    </ion-card-content>
+  </ion-card>
+</ion-content>

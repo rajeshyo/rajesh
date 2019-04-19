@@ -1,0 +1,63 @@
+<ion-header>
+  <ion-navbar color="primary">
+    <ion-title>MyTask Details</ion-title>
+       <!-- <ion-buttons right *ngIf="tDetails">
+      <button ion-button icon-only (click)="updateTask($event,tDetails.fk_project,tDetails.id)"><ion-icon name="brush" ></ion-icon></button>
+    </ion-buttons>-->
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <h3 text-center *ngIf="usertaskview">
+    {{usertaskview.ref}}
+    <ion-icon [name]="clipboard"></ion-icon>
+  </h3>
+  
+<ion-list *ngIf="usertaskview">
+
+       <ion-item>
+        <ion-label color="primary">Ref No</ion-label>
+        <ion-label>{{usertaskview.ref}}</ion-label>
+      </ion-item>
+       <ion-item>
+        <ion-label color="primary">Project Id</ion-label>
+        <ion-label>{{usertaskview.fk_project}}</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label color="primary">Task Name</ion-label>
+        <ion-label>{{usertaskview.label}}</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label color="primary">Start Date</ion-label>
+        <ion-label>{{startDate}}</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label color="primary">End Date</ion-label>
+        <ion-label>{{endDate}}</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label color="primary">Planned workload</ion-label>
+        <ion-label>{{hours}}  Hours</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label color="primary">Declared progress</ion-label>
+        <ion-label>{{usertaskview.progress}} %</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label color="primary">Description</ion-label>
+        <ion-label>{{usertaskview.description}}</ion-label>
+      </ion-item>
+	   <ion-item>
+       <ion-label color="primary">Remarks</ion-label>
+        <ion-label>{{usertaskview.note_public}}</ion-label>
+      </ion-item>
+  </ion-list>
+ 
+</ion-content>
+<ion-footer>
+
+<ion-navbar color="primary">
+<p style=" text-align:center;">Powered By Biztechnosys</p>
+  </ion-navbar>
+
+</ion-footer>

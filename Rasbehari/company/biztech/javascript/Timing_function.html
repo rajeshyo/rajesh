@@ -1,0 +1,64 @@
+<html>
+
+
+
+<head>
+    <script type="text/javascript">
+   /* var ID=0;
+        function msg()
+        {
+            document.getElementById("op").innerHTML="5 second over";
+
+
+        }
+        function start()
+        {
+          ID=window.setTimeout(msg,5000);
+        }
+        function stop()
+        {
+
+            window.clearTimeout(ID);
+        }*/
+        var ID=0;
+        seconds=0;
+        function msg()
+        {
+            document.getElementById("op").innerHTML=seconds+" second";
+            seconds++;
+
+
+        }
+        function start()
+        {
+          ID=window.setInterval(msg,1000);
+        }
+        function stop()
+        {
+
+            window.clearTimeout(ID);
+            window.clearInterval(ID);
+        }
+        
+
+
+
+
+        </script>
+</head>
+
+<body>
+
+
+
+<button onclick="start()" id="btnadd">start</button>
+<h1 id="op"> some text</h1>
+
+<button onclick="stop()" id="btnstop">stop</button>
+
+
+</body>
+
+
+
+</html>
